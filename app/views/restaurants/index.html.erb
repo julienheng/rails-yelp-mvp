@@ -1,0 +1,7 @@
+<div class="container">
+  <ul class="inline mb-6">
+  <% @restaurants.each do |res| %>
+  <li class="title"><%= link_to res.name, restaurant_path(res) %>
+    <li><%= res.address %></li>
+  </li><% end %></ul>
+</div>
